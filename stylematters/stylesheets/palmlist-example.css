@@ -1,0 +1,9 @@
+.my-custom-style .title {
+	font-size: 15px;
+	color: #333;
+}
+
+.my-custom-style .label {
+	margin-top: 24px;
+	color: #c73;
+}

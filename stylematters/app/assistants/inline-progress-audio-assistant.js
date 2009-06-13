@@ -1,0 +1,1 @@
+InlineProgressAudioAssistant = Class.create( ExampleAssistantBase, {});

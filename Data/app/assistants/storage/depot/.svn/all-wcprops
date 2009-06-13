@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/depot
+END
+get-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/depot/get-assistant.js
+END
+advanced-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/depot/advanced-assistant.js
+END
+add-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/depot/add-assistant.js
+END
+depot-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/depot/depot-assistant.js
+END

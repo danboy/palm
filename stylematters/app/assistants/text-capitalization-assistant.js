@@ -1,0 +1,3 @@
+TextCapitalizationAssistant = Class.create( ExampleAssistantBase, {
+
+});

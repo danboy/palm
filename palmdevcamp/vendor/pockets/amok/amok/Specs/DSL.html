@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title>JSSpec results</title>
+<link rel="stylesheet" type="text/css" href="../JSSpec/JSSpec.css"/>
+<script type="text/javascript" src="../JSSpec/diff_match_patch.js"></script>
+<script type="text/javascript" src="../JSSpec/JSSpec.js"></script>
+<script type="text/javascript" src="../amok.js"></script>
+<script type="text/javascript">// <![CDATA[
+
+/**
+ * As an amok user
+ * I want a smooth DSL
+ * So that I can easily read and remember the syntax
+ */
+
+function Mokee() {
+  _foo = "foo";
+  this.getFoo = function() {
+    return _foo;
+  };
+}
+;
+
+describe('Scenario 1: method added to the mock', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+  'And mock does not have a method called getFoo': function() {
+    value_of(mock.getFoo).should_be_undefined();
+  },
+  'And mock does not have a method called getFoo': function() {
+    value_of(mock.getBar).should_be_undefined();
+  },
+  'When I pass the name of a method within my mokee to mock.should_receive then my mock should also have that method': function() {
+    mock.should_receive("getFoo");
+    value_of(typeof mock.getFoo).should_be("function");
+  },
+  'When I pass the name of a second method within my mokee to mock.should_receive then my mock should also have that second method': function() {
+    mock.should_receive("getFoo");
+    mock.should_receive("getBar");
+    value_of(typeof mock.getFoo).should_be("function");
+    value_of(typeof mock.getBar).should_be("function");
+  }
+});
+
+describe('Scenario 2: Set expectation of arguments passed to mock method', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+    mock.should_receive("getFoo");
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+  'And mock has a method called getFoo': function() {
+    value_of(typeof mock.getFoo).should_be('function');
+  },
+  'When I pass arguments of the wrong value to with_args then an exception will be thrown': function() {
+    mock.with_args("test1", "test2");
+    value_of(function() {
+      mock.getFoo("test1", "test2");
+    }).should_not_throw();
+    value_of(function() {
+      mock.getFoo("wrong", "arguments");
+    }).should_throw();
+  },
+  'When I pass arguments of the wrong type to with_args then an exception will be thrown': function() {
+    mock.with_args(String, Number);
+    value_of(function() {
+      mock.getFoo("test1", 999);
+    }).should_not_throw();
+    value_of(function() {
+      mock.getFoo("test1", "string");
+    }).should_throw();
+  }
+});
+
+describe('Scenario 3: Set expectation of return value', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+    mock.should_receive("getFoo");
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+  'And mock has a method called getFoo': function() {
+    value_of(typeof mock.getFoo).should_be('function');
+  },
+  'And getFoo has no return value': function() {
+    value_of(mock.getFoo()).should_be_undefined();
+  },
+  'When I pass an argument to and_return, that value will be returned when the mock method is called': function() {
+    mock.and_return("some value");
+    value_of(mock.getFoo()).should_be("some value");
+  }
+});
+
+describe('Scenario 4: Set expectation of callback to be triggered by mock method call', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+    mock.should_receive("getFoo");
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+  'And mock has a method called getFoo': function() {
+    value_of(typeof mock.getFoo).should_be('function');
+  },
+  'When I pass a callback and and array of arguments to and_callback, the callback will be called with those arguments': function() {
+    var one = null;
+    var two = null;
+
+    var callback = function(msg) {
+      one = msg;
+    }
+    mock.and_callback(callback, "one");
+
+    mock.getFoo()
+    value_of(one).should_be("one");
+  }
+});
+
+describe('Scenario 5: Override constructors', {
+  'before_each': function() {
+    Foo = function() {
+      this.getFoo = function() {
+        return "foo";
+      }
+    };
+
+    mock = new amok.mock(Foo);
+    mock.should_receive('getFoo').and_return('bar');
+    Foo = amok.mock_all_with(mock);
+  },
+  'constructor should return mock object': function() {
+    value_of(new Foo().getFoo()).should_be("bar");
+  }
+});
+
+describe('Scenario 6: mock.getCallCountFor', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+    mock.should_receive("getFoo");
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+  'When I call a callback, the getCallCountFor should go up': function() {
+    mock.should_receive("getFoo");
+    value_of(mock.getCallCountFor('getFoo')).should_be(0);
+    mock.getFoo();
+    value_of(mock.getCallCountFor('getFoo')).should_be(1);
+  }
+});
+
+describe('Scenario 7: Multiple should_receive calls', {
+  'before_each': function() {
+    mock = amok.mock(Mokee);
+  },
+  'Given that amok is available as a namespace': function() {
+    value_of(typeof amok).should_be("object")
+  },
+  'And I have a mock object': function() {
+    value_of(typeof mock).should_be("object");
+  },
+
+  'I should be able to specify multiple mock calls to the same function ': function() {
+    mock.should_receive("getFoo").with_args('foo');
+    mock.should_receive('getFoo').with_args('bar');
+    value_of(function () {
+      mock.getFoo('foo');
+    }).should_not_throw();
+    value_of(function () {
+      mock.getFoo('bar');
+    }).should_not_throw();
+
+  },
+  'mock calls will return the correct arguments set in the specification': function() {
+    mock.should_receive("getFoo").with_args('foo').and_return('baz');
+    mock.should_receive('getFoo').with_args('bar').and_return('quux');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('bar')).should_be('quux');
+
+  },
+  'multiple mock calls to the same object will still respect the times method': function() {
+    mock.should_receive("getFoo").with_args('foo').times(3).and_return('baz');
+    mock.should_receive('getFoo').with_args('bar').and_return('quux');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('bar')).should_be('quux');
+  },
+  'especially in cases where there are multiple return arguments': function() {
+    mock.should_receive("getFoo").with_args('foo').times(3).and_return('baz', 'corge', 'uein');
+    mock.should_receive('getFoo').with_args('bar').and_return('quux');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('foo')).should_be('corge');
+    value_of(mock.getFoo('foo')).should_be('uein');
+    value_of(mock.getFoo('bar')).should_be('quux');
+  },
+  'but, I must call specified mock calls in the correct order ': function() {
+    mock.should_receive("getFoo").with_args('foo');
+    mock.should_receive('getFoo').with_args('bar');
+    value_of(function () {
+      mock.getFoo('bar');
+    }).should_throw();
+
+  },
+  'even in cases where we use the times method': function() {
+    mock.should_receive("getFoo").with_args('foo').times(2).and_return('baz');
+    mock.should_receive('getFoo').with_args('bar').and_return('quux');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(mock.getFoo('foo')).should_be('baz');
+    value_of(function () {
+      mock.getFoo('foo')
+    }).should_throw(); //called one too many times!!!
+    value_of(mock.getFoo('bar')).should_be('quux');
+  },
+  'throw an informative error if the number of call exceeds expected': function() {
+    mock.should_receive("getFoo").with_args('foo');
+    mock.getFoo('foo');
+    var unexpectedCallException = {name: 'amok error', message: "amok Method: unexpected call to getFoo with foo"};
+    value_of(function () {
+      mock.getFoo('foo')
+    }).should_throw(unexpectedCallException); //called one too many times!!!
+  },
+  'now, let\'s get totally crazy': function() {
+    mock.should_receive("getFoo").with_args('foo', 'bar').times(2).and_return('baz', 'quux');
+    mock.should_receive('getFoo').with_args('bar', 'foo').times(1).and_return('corge');
+    mock.should_receive('getBar').with_args(['foobar']).times(2).and_return('corge');
+    mock.should_receive('getBar').with_args('baz').times(2).and_return('wax', 'puppies');
+    value_of(mock.getFoo('foo', 'bar')).should_be('baz');
+    value_of(mock.getFoo('foo', 'bar')).should_be('quux');
+    value_of(mock.getFoo('bar', 'foo')).should_be('corge');
+    value_of(mock.getBar(['foobar'])).should_be('corge');
+    value_of(mock.getBar(['foobar'])).should_be('corge');
+    value_of(mock.getBar('baz')).should_be('wax');
+    value_of(mock.getBar('baz')).should_be('puppies');
+    value_of(function () { mock.getFoo('foo') }).should_throw(); //called one too many times!!!
+
+  }
+
+});
+
+
+// ]]></script>
+</head>
+<body>
+<div style="display:none;"><p>A</p>
+
+  <p>B</p></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#!/usr/local/bin/ruby
+require 'rubygems'
+require 'json'
+require 'getoptlong'
+
+@dry_run = false
+
+opts = GetoptLong.new(
+  [ '--dry-run', '-n', GetoptLong::NO_ARGUMENT ]
+)
+opts.each do |opt, arg|
+  @dry_run = true if (opt == '--dry-run')
+end
+
+def run(cmd)
+  puts((@dry_run ? 'dry-run: ' : '') + cmd)
+  system(cmd) unless @dry_run
+end
+
+script_path = File.expand_path(__FILE__)
+project_dirname = script_path.split('/')[-5]
+project_parent_path =  script_path.split('/')[0..-6].join('/')
+
+app_info = File.open("#{project_parent_path}/#{project_dirname}/appinfo.json")
+json = JSON.parse(app_info.read())
+tar_filename = "#{json['id']}.tar"
+
+cmd = "tar -c -C #{project_parent_path} -f /tmp/#{tar_filename} --exclude=.svn --exclude=.idea #{project_dirname}"
+run(cmd)
+
+cmd = "novacom put file://var/usr/palm/applications/#{tar_filename} < /tmp/#{tar_filename}"
+run(cmd)
+
+cmd = "cd /var/usr/palm/applications && tar -xvf #{tar_filename}"
+puts "\n\"#{json['title']}\" has been copied to device, to complete install please paste (command-v):\n\n#{cmd}\n\n"
+system("echo \"#{cmd}\" | pbcopy")
+
+run('novaterm')

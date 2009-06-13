@@ -1,0 +1,308 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example">	
+<div class="palm-list">	
+	<div class="palm-row drawer-button" id="button1">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">World</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+	<div class="palm-row drawer-button">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">Africa</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Chad</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Abeche</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">N'Djamena</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">South Africa</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Cape Town</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Port Elizabeth</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="palm-row drawer-button">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">SE Asia</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Thailand</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Bangkok</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Chiang Mai</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Vietnam</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Hanoi</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Saigon</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="palm-row drawer-button">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">North America</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">USA</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Seattle</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">San Diego</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Canada</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Vancouver</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Edmonton</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="palm-row drawer-button">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">Central America</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Panama</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Colon</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Santiago</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Columbia</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Bogota</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Turbo</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="palm-row drawer-button">
+		<div class="palm-row-wrapper">
+			<div class="title">
+				<span x-mojo-loc="">South America</span> 
+			</div>
+		</div>
+	</div>
+	<div class="drawer" x-mojo-element="Drawer">
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Argentina</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Buenos Aires</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Montevideo</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="palm-row drawer-button">
+			<div class="palm-row-wrapper">
+				<div class="title">
+					<span x-mojo-loc="">Chile</span> 
+				</div>
+			</div>
+		</div>
+		<div class="drawer" x-mojo-element="Drawer">
+			<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Santiago</span> 
+					</div>
+				</div>
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<div class="title">
+						<span x-mojo-loc="">Punta Arenas</span> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+
+</div>
+
+<!-- list overridable css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>
+	

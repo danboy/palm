@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/sqlite
+END
+sqlite-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/sqlite/sqlite-assistant.js
+END
+query-assistant.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sdk/!svn/ver/141590/branches/release/samples/Data/app/assistants/storage/sqlite/query-assistant.js
+END

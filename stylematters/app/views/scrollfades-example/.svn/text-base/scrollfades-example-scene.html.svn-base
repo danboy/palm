@@ -1,0 +1,160 @@
+<div class="palm-scene">
+<div class="my-scene-fade-top" x-mojo-scroll-fade="top"></div>
+<div class="my-scene-fade-bottom" x-mojo-scroll-fade="bottom"></div>
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-list">
+	<div class="palm-row first" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">1</div>
+			<div class="title truncating-text">Joy of Cooking</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">2</div>
+			<div class="title truncating-text">The Gourmet Cookbook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">3</div>
+			<div class="title truncating-text">La Cuisine</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">4</div>
+			<div class="title truncating-text">Helen Corbitt Cooks for Company</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">5</div>
+			<div class="title truncating-text">Simca's Cuisine</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">6</div>
+			<div class="title truncating-text">The Grand Masters of French Cuisine</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">7</div>
+			<div class="title truncating-text">Middle East Cookbook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">8</div>
+			<div class="title truncating-text">Madame Wong's Long Life Cookbook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">9</div>
+			<div class="title truncating-text">The Professional Chef</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">10</div>
+			<div class="title truncating-text">The Taste of America</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">11</div>
+			<div class="title truncating-text">The Kitchen</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">12</div>
+			<div class="title truncating-text">California Cookbook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">13</div>
+			<div class="title truncating-text">More Fast &amp; Fresh</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">14</div>
+			<div class="title truncating-text">Feast of Santa Fe</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">15</div>
+			<div class="title truncating-text">Mexico The Beautiful Cookbook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">16</div>
+			<div class="title truncating-text">Tapas</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">17</div>
+			<div class="title truncating-text">Cold Cuisine</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">18</div>
+			<div class="title truncating-text">Hot &amp; Spicy</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">19</div>
+			<div class="title truncating-text">How to Cook</div>
+		</div>
+	</div>
+	<div class="palm-row last" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="label">20</div>
+			<div class="title truncating-text">La Methode Pepin</div>
+		</div>
+	</div>
+</div></div>
+
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html"><div class="my-scene-fade-top" x-mojo-scroll-fade="top"></div>
+<div class="my-scene-fade-bottom" x-mojo-scroll-fade="bottom"></div></div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+	.my-scene-fade-top {
+		position: fixed; 
+		top: 0; 
+		z-index: 100000;
+		height: 54px; 
+		width: 100%;
+		background: url(../images/my-scene-fade-top.png) top center repeat-x;
+	}
+	.my-scene-fade-bottom {
+		position: fixed; 
+		bottom: 0; 
+		z-index: 100000;
+		height: 54px; 
+		width: 100%;
+		background: url(../images/my-scene-fade-bottom.png) bottom center repeat-x;
+	}
+</div>
+</div>

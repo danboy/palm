@@ -1,0 +1,69 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example">                    
+<div class="palm-group">
+	<div class="palm-group-title">Left aligned checkboxes</div>
+	<div class="palm-list">	
+		<div class="palm-row first">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox-1"></div>
+				<div class="title">Get kids to school</div>
+			</div>
+		</div>
+		<div class="palm-row last">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox-2"></div>
+				<div class="title">8 hours sleep</div>
+			</div>
+		</div>
+	</div>
+</div>        
+
+<div class="palm-group">
+	<div class="palm-group-title">Right aligned checkboxes</div>
+	<div class="palm-list">	
+		<div class="palm-row first">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="right" id="sample-checkbox-1"></div>
+				<div class="title">Sleep in past 8</div>
+			</div>
+		</div>
+		<div class="palm-row last">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="right" id="sample-checkbox-2"></div>
+				<div class="title">Make the bed</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-group unlabeled">
+	<div class="palm-list">	
+		<div class="palm-row last">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox-3"></div>
+				<div class="title right disabled">A disabled check box</div>
+			</div>
+		</div>
+	</div>
+</div>                                             
+
+</div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+
+</div>
+
+<!-- list overridable css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>
+	

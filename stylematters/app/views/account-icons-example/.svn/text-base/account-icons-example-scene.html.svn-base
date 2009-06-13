@@ -1,0 +1,158 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-list">
+	<div class="palm-row first" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon gmail"></div>
+			<div class="title right">.gmail</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon aim"></div>
+			<div class="title right">.aim</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon aol"></div>
+			<div class="title right">.aol</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon eas"></div>
+			<div class="title right">.eas</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon facebook"></div>
+			<div class="title right">.facebook</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon favorites"></div>
+			<div class="title right">.favorites</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon generic"></div>
+			<div class="title right">.generic</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon google"></div>
+			<div class="title right">.google</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon gmail"></div>
+			<div class="title right">.gmail</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon googletalk"></div>
+			<div class="title right">.googletalk</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon inboxes"></div>
+			<div class="title right">.inboxes</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon local"></div>
+			<div class="title right">.local</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon photobucket"></div>
+			<div class="title right">.photobucket</div>
+		</div>
+	</div>
+	<div class="palm-row" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon sim"></div>
+			<div class="title right">.sim</div>
+		</div>
+	</div>
+	<div class="palm-row last" x-mojo-tap-highlight="momentary">
+		<div class="palm-row-wrapper">
+			<div class="left icon palm-account-icon yahoo"></div>
+			<div class="title right">.yahoo</div>
+		</div>
+	</div>
+</div>
+<div class="palm-group">
+	<div class="palm-group-title">medium</div>
+	<div class="palm-list">
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon aol medium"></div>
+				<div class="title right">.aol .medium</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon eas medium"></div>
+				<div class="title right">.eas .medium</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon facebook medium"></div>
+				<div class="title right">.facebook .medium</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon generic medium"></div>
+				<div class="title right">.generic .medium</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon gmail medium"></div>
+				<div class="title right">.gmail .medium</div>
+			</div>
+		</div>
+		<div class="palm-row" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon local medium"></div>
+				<div class="title right">.local .medium</div>
+			</div>
+		</div>
+		<div class="palm-row last" x-mojo-tap-highlight="momentary">
+			<div class="palm-row-wrapper">
+				<div class="left icon palm-account-icon yahoo medium"></div>
+				<div class="title right">.yahoo medium</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+
+</div>
+
+<!-- list overridable css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>

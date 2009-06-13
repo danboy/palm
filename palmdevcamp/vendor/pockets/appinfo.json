@@ -1,0 +1,10 @@
+{
+	"title": "Pockets",
+	"type": "web",
+	"main": "index.html",
+	"id": "com.pivotallabs.luna.pockets",
+	"version": "1.0", 
+	"removable": "true",
+    "icon": "icon.png"
+}
+

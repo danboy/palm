@@ -1,0 +1,523 @@
+[
+	 {
+	    "source": "javascripts/css-tools.js"
+	  },
+	 {
+	    "source": "javascripts/lorem.js"
+	  },
+	 {
+	    "source": "javascripts/orientation-handler-assistant.js"
+	  },
+	  {
+	    "source": "javascripts/sublist-assistant-base.js"
+	  },
+	  {
+	    "source": "javascripts/example-assistant-base.js"
+	  },
+	  {
+	    "source": "app/assistants/stage-assistant.js"
+	  },
+	  {
+	    "source": "app/assistants/app-assistant.js"
+	  },
+	{
+	  "source": "app\/assistants\/csstools-report-assistant.js",
+	"scenes" : "csstools-report"
+	},
+	 {
+	    "source": "app/assistants/list-assistant.js",
+		"scenes" : "list"
+	  },
+	{
+	  "source": "app/assistants/collapsibledividers-assistant.js"	,
+		"scenes" : "collapsibledividers"
+	},
+	{
+	  "source": "app/assistants/collapsibledividers-example-assistant.js",
+		"scenes" : "collapsibledividers-example"
+	},
+	{
+	  "source": "app/assistants/collapsibledividers-example-other-assistant.js",
+		"scenes" : "collapsibledividers-example-other"
+	},
+	{
+	  "source": "app/assistants/dialog-assistant.js",
+		"scenes" : "dialog"
+	},
+	{
+	  "source": "app/assistants/dialog-example-assistant.js",
+		"scenes" : "dialog-example"
+	},
+	{
+	  "source": "app/assistants/drawers-assistant.js",
+		"scenes" : "drawers"
+	},
+	{
+	  "source": "app/assistants/drawers-example-assistant.js",
+		"scenes" : "drawers-example"
+	},
+	{
+	  "source": "app/assistants/drawers-with-in-a-drawer-assistant.js",
+		"scenes" : "drawers-with-in-a-drawer"
+	},
+	{
+	  "source": "app/assistants/labeledgroup-assistant.js",
+		"scenes" : "labeledgroup"
+	},
+	{
+	  "source": "app/assistants/labeleddividers-assistant.js",
+		"scenes" : "labeleddividers"
+	},
+	{
+	  "source": "app/assistants/labeleddividers-example-assistant.js",
+		"scenes" : "labeleddividers-example"
+	},
+	{
+	  "source": "app/assistants/menupanel-assistant.js",
+		"scenes" : "menupanel"
+	},
+	{
+	  "source": "app/assistants/menupanel-example-assistant.js",
+		"scenes" : "menupanel-example"
+	},
+	{
+	  "source": "app/assistants/palmpageheader-assistant.js",
+		"scenes" : "palmpageheader"
+	},
+	{
+	  "source": "app/assistants/palmpageheader-example-assistant.js",
+		"scenes" : "palmpageheader-example"
+	},
+	{
+	  "source": "app/assistants/palmbackdrop-assistant.js",
+		"scenes" : "palmbackdrop"
+	},
+	{
+	  "source": "app/assistants/palmbackdrop-example-1-assistant.js",
+		"scenes" : "palmbackdrop-example-1"
+	},
+	{
+	  "source": "app/assistants/palmbackdrop-example-2-assistant.js",
+		"scenes" : "palmbackdrop-example-2"
+	},
+	{
+	  "source": "app/assistants/palmbackdrop-example-3-assistant.js",
+		"scenes" : "palmbackdrop-example-3"
+	},
+	{
+	  "source": "app/assistants/palmbackdrop-example-4-assistant.js",
+		"scenes" : "palmbackdrop-example-4"
+	},
+	{
+	  "source": "app/assistants/reorder-assistant.js",
+		"scenes" : "reorder"
+	},
+	{
+	  "source": "app/assistants/reorder-example-assistant.js",
+		"scenes" : "reorder-example"
+	},
+	{
+	  "source": "app/assistants/scrollfades-assistant.js",
+		"scenes" : "scrollfades"
+	},
+	{
+	  "source": "app/assistants/scrollfades-example-assistant.js",
+		"scenes" : "scrollfades-example"
+	},
+	{
+	  "source": "app/assistants/scrollfades-example-other-assistant.js",
+		"scenes" : "scrollfades-example-other"
+	},
+	{
+	  "source": "app/assistants/separators-assistant.js",
+		"scenes" : "separators"
+	},
+	{
+	  "source": "app/assistants/separators-example-assistant.js",
+		"scenes" : "separators-example"
+	},
+	{
+	  "source": "app/assistants/submenu-assistant.js",
+		"scenes" : "submenu"
+	},
+	{
+	  "source": "app/assistants/submenu-example-assistant.js",
+		"scenes" : "submenu-example"
+	},
+	{
+	  "source": "app/assistants/swipedelete-assistant.js",
+		"scenes" : "swipedelete"
+	},
+	{
+	  "source": "app/assistants/swipedelete-example-assistant.js",
+		"scenes" : "swipedelete-example"
+	},
+	{
+	  "source": "app/assistants/text-assistant.js",
+		"scenes" : "text"
+	},
+	{
+	  "source": "app/assistants/text-truncation-assistant.js",
+		"scenes" : "text-truncation"
+	},
+	{
+	  "source": "app/assistants/text-capitalization-assistant.js",
+		"scenes" : "text-capitalization"
+	},
+	{
+	  "source": "app/assistants/text-example-assistant.js",
+		"scenes" : "text-example"
+	},
+	{
+	  "source": "app/assistants/touchfeedback-assistant.js",
+		"scenes" : "touchfeedback"
+	},
+	{
+	  "source": "app/assistants/touchfeedback-example-assistant.js",
+		"scenes" : "touchfeedback-example"
+	},
+	{
+	  "source": "app/assistants/unlabeledgroup-example-assistant.js",
+		"scenes" : "unlabeledgroup-example"
+	},
+  {
+    "source": "app/assistants/subcat-assistant.js",
+		"scenes" : "subcat"
+  },
+  {
+    "source": "app/assistants/palmbackdrop-assistant.js",
+		"scenes" : "palmbackdrop"
+  },
+  {
+    "source": "app/assistants/palmmenudemo-assistant.js",
+		"scenes" : "palmmenudemo"
+  },      
+  {
+    "source": "app/assistants/palmmenudemo-example-assistant.js",
+		"scenes" : "palmmenudemo-example"
+  },                                
+  {
+    "source": "app/assistants/palmlist-assistant.js",
+		"scenes" : "palmlist"
+  },
+  {
+    "source": "app/assistants/palmlist-example-1-assistant.js",
+		"scenes" : "palmlist-example-1"
+  },
+  {
+    "source": "app/assistants/palmlist-example-2-assistant.js",
+		"scenes" : "palmlist-example-2"
+  },
+  {
+    "source": "app/assistants/palmlist-example-3-assistant.js",
+		"scenes" : "palmlist-example-3"
+  },
+  {
+    "source": "app/assistants/palmlist-example-4-assistant.js",
+		"scenes" : "palmlist-example-4"
+  },   
+  {
+    "source": "app/assistants/palmlist-example-5-assistant.js",
+		"scenes" : "palmlist-example-5"
+  },
+  {
+    "source": "app/assistants/about-assistant.js",
+		"scenes" : "about"
+  },
+  {
+    "source": "app/assistants/cssview-assistant.js",
+		"scenes" : "cssview"
+  },
+  {
+    "source": "app/assistants/htmlview-assistant.js",
+		"scenes" : "htmlview"
+  },
+  {
+    "source": "app/assistants/widgetlistselectors-assistant.js",
+		"scenes" : "widgetlistselectors"
+  },
+  {
+    "source": "app/assistants/widgetlistselectors-example-assistant.js",
+		"scenes" : "widgetlistselectors-example"
+  }
+,
+{
+  "source": "app\/assistants\/palmmenudemo-menu-buttons-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-buttons"
+},
+{
+  "source": "app\/assistants\/palmmenudemo-menu-groups-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-groups"
+}
+,
+{
+  "source": "app\/assistants\/palmmenudemo-menu-labels-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-labels"
+}
+,
+{
+  "source": "app\/assistants\/palmmenudemo-menu-text-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-text"
+}
+,
+{
+  "source": "app\/assistants\/palmmenudemo-menu-fades-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-fades"
+}
+,
+{
+  "source": "app\/assistants\/palmmenudemo-menu-custom-menu-ui-assistant.js"	,
+		"scenes" : "palmmenudemo-menu-custom-menu-ui"
+}
+,
+{
+  "source": "app\/assistants\/fixed-header-example-assistant.js"	,
+		"scenes" : "fixed-header-example"
+}
+,
+{
+  "source": "app\/assistants\/scrims-example-assistant.js"	,
+		"scenes" : "scrims-example"
+}
+,
+{
+  "source": "app\/assistants\/add-remove-rows-example-assistant.js"	,
+		"scenes" : "add-remove-rows-example"
+}
+,
+{
+  "source": "app\/assistants\/solid-dividers-example-assistant.js"	,
+		"scenes" : "solid-dividers-example"
+}
+,
+{
+  "source": "app\/assistants\/alphabetical-dividers-example-assistant.js"	,
+		"scenes" : "alphabetical-dividers-example"
+}
+,
+{
+  "source": "app\/assistants\/typography-font-families-assistant.js"	,
+		"scenes" : "typography-font-families"
+}
+,
+{
+  "source": "app\/assistants\/typography-basic-styles-assistant.js"	,
+		"scenes" : "typography-basic-styles"
+}
+,
+{
+  "source": "app\/assistants\/typography-guidelines-assistant.js"	,
+		"scenes" : "typography-guidelines"
+}
+,
+{
+  "source": "app\/assistants\/textfields-example-assistant.js"	,
+		"scenes" : "textfields-example"
+}
+,
+{
+  "source": "app\/assistants\/page-containers-unlabeled-group-assistant.js"	,
+		"scenes" : "page-containers-unlabeled-group"
+}
+,
+{
+  "source": "app\/assistants\/drawers-with-list-assistant.js"	,
+		"scenes" : "drawers-with-list"
+}
+,
+{
+  "source": "app\/assistants\/drawers-with-custom-ui-assistant.js"	,
+		"scenes" : "drawers-with-custom-ui"
+}
+,
+{
+  "source": "app\/assistants\/drawers-with-in-a-drawer-assistant.js"	,
+		"scenes" : "drawers-with-in-a-drawer"
+}
+,
+{
+  "source": "app\/assistants\/dashboard-panels-example-assistant.js"	,
+		"scenes" : "dashboard-panels-example"
+}
+,
+{
+  "source": "app\/assistants\/checkboxes-example-assistant.js"	,
+		"scenes" : "checkboxes-example"
+}
+,
+{
+  "source": "app\/assistants\/toggle-buttons-example-assistant.js"	,
+		"scenes" : "toggle-buttons-example"
+}
+,
+{
+  "source": "app\/assistants\/buttons-example-assistant.js"	,
+		"scenes" : "buttons-example"
+}
+,
+{
+  "source": "app\/assistants\/radio-buttons-example-assistant.js"	,
+		"scenes" : "radio-buttons-example"
+}
+,
+{
+  "source": "app\/assistants\/sliders-example-assistant.js"	,
+		"scenes" : "sliders-example"
+}
+,
+{
+  "source": "app\/assistants\/sliders-assistant.js"	,
+		"scenes" : "sliders"
+}
+,
+{
+  "source": "app\/assistants\/sliders-labeled-slider-assistant.js"	,
+		"scenes" : "sliders-labeled-slider"
+}
+,
+{
+  "source": "app\/assistants\/sliders-progress-slider-assistant.js"	,
+		"scenes" : "sliders-progress-slider"
+}
+,
+{
+  "source": "app\/assistants\/activity-indicators-assistant.js"	,
+		"scenes" : "activity-indicators"
+}
+,
+{
+  "source": "app\/assistants\/activity-indicators-small-assistant.js"	,
+		"scenes" : "activity-indicators-small"
+}
+,
+{
+  "source": "app\/assistants\/activity-indicators-large-assistant.js"	,
+		"scenes" : "activity-indicators-large"
+}
+,
+{
+  "source": "app\/assistants\/inline-progress-audio-assistant.js"	,
+		"scenes" : "inline-progress-audio"
+}
+,
+{
+  "source": "app\/assistants\/multi-value-picker-assistant.js"	,
+		"scenes" : "multi-value-picker"
+}
+,
+{
+  "source": "app\/assistants\/multi-value-picker-single-picker-assistant.js"	,
+		"scenes" : "multi-value-picker-single-picker"
+}
+,
+{
+  "source": "app\/assistants\/multi-value-picker-date-and-time-picker-assistant.js"	,
+		"scenes" : "multi-value-picker-date-and-time-picker"
+}
+,
+{
+  "source": "app\/assistants\/multi-value-picker-date-picker-assistant.js"	,
+		"scenes" : "multi-value-picker-date-picker"
+}
+,
+{
+  "source": "app\/assistants\/multi-value-picker-time-picker-assistant.js"	,
+		"scenes" : "multi-value-picker-time-picker"
+}
+,
+{
+  "source": "app\/assistants\/filter-field-example-assistant.js"	,
+		"scenes" : "filter-field-example"
+}
+,
+{
+  "source": "app\/assistants\/addressing-widget-example-assistant.js"	,
+		"scenes" : "addressing-widget-example"
+}
+,
+{
+  "source": "app\/assistants\/combobox-example-assistant.js"	,
+		"scenes" : "combobox-example"
+}
+,
+{
+  "source": "app\/assistants\/textfields-single-line-truncating-assistant.js"	,
+		"scenes" : "textfields-single-line-truncating"
+}
+,
+{
+  "source": "app\/assistants\/textfields-assistant.js"	,
+		"scenes" : "textfields"
+}
+,
+{
+  "source": "app\/assistants\/textfields-multi-line-assistant.js"	,
+		"scenes" : "textfields-multi-line"
+}
+,
+{
+  "source": "app\/assistants\/textfields-rich-text-assistant.js"	,
+		"scenes" : "textfields-rich-text"
+}
+,
+{
+  "source": "app\/assistants\/textfields-hint-text-assistant.js"	,
+		"scenes" : "textfields-hint-text"
+}
+,
+{
+  "source": "app\/assistants\/download-button-example-assistant.js"	,
+		"scenes" : "download-button-example"
+}
+,
+{
+  "source": "app\/assistants\/file-download-progress-example-assistant.js"	,
+		"scenes" : "file-download-progress-example"
+}
+,
+{
+  "source": "app\/assistants\/checkmark-example-assistant.js"	,
+		"scenes" : "checkmark-example"
+}
+,
+{
+  "source": "app\/assistants\/status-indicators-example-assistant.js"	,
+		"scenes" : "status-indicators-example"
+}
+,
+{
+  "source": "app\/assistants\/account-icons-example-assistant.js"	,
+		"scenes" : "account-icons-example"
+}
+,
+{
+  "source": "app\/assistants\/form-errors-assistant.js"	,
+		"scenes" : "form-errors"
+}
+,
+{
+  "source": "app\/assistants\/scene-errors-assistant.js"	,
+		"scenes" : "scene-errors"
+}
+,
+{
+  "source": "app\/assistants\/app-errors-assistant.js"	,
+		"scenes" : "app-errors"
+}
+,
+{
+  "source": "app\/assistants\/dashboard-assistant.js"	,
+		"scenes" : "dashboard"
+}
+,
+{
+  "source": "app\/assistants\/error-iconography-assistant.js"	,
+		"scenes" : "error-iconography"
+}
+,
+{
+  "source": "app\/assistants\/error-icons-assistant.js"	,
+		"scenes" : "error-icons"
+}
+
+]

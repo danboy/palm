@@ -1,0 +1,9 @@
+{
+	"title": "Style Matters",
+	"type": "web",
+	"main": "index.html",
+	"id": "com.palm.app.stylematters",
+	"miniicon": "miniicon.png",
+	"version": "0.5",
+	"vendor": "Palm"
+}

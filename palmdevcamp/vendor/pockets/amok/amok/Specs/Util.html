@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>JSSpec results</title>
+<link rel="stylesheet" type="text/css" href="../JSSpec/JSSpec.css" />
+
+<!-- JSSPEC -->
+<script type="text/javascript" src="../JSSpec/diff_match_patch.js"></script>
+<script type="text/javascript" src="../JSSpec/JSSpec.js"></script>
+
+<!-- SUT -->
+<script type="text/javascript" src="../amok.js"></script>
+
+<script type="text/javascript">// <![CDATA[
+
+/**
+  As an amok developer
+  I want a util class where I can store common helper methods
+  So that the code is not repeated in other classes
+*/
+
+describe('Scenario 1: Method to compare the value of two arguments', {
+  'Given that the amok namespace is available': function(){
+    value_of( typeof amok ).should_be( "object" );
+  },
+  'And amok.Util is available as an object': function(){
+    value_of( typeof amok.Util ).should_be( "object" );
+  },
+  'Equal numbers should resolve to true': function(){
+    value_of( amok.Util.equal(3,3).result ).should_be_true();
+  },
+  'Non equal numbers should resolve to false false ': function(){
+    value_of( amok.Util.equal(3,2).result ).should_be_false();
+  },
+  'String numbers should not equal real numbers': function(){
+    value_of( amok.Util.equal(3,"3").result ).should_be_false();
+  },
+  'Arrays should equal arrays that contain identical members': function(){
+    value_of( amok.Util.equal([1,2,3],[1,2,3]).result ).should_be_true();
+  },
+  'Arrays should not be equal to other arrays that contain different members': function(){
+    value_of( amok.Util.equal([1,2,3],[1,2,4]).result ).should_be_false();
+  },
+  'Arrays should not equal arrays that have the same content but a different length': function(){
+    value_of( amok.Util.equal([1,2,3],[1,2,3,4]).result ).should_be_false();
+  },
+  'Objects should equal objects which have identical content': function(){
+    value_of( amok.Util.equal({a:"a", b:"b", c:"c"},{a:"a", b:"b", c:"c"}).result ).should_be_true();
+  },
+  'Objects should not equal objects which have identical keys but non-identical values': function(){
+    value_of( amok.Util.equal({x:"x", y:"y", z:"w"},{x:"x", y:"y", z:"z"}).result ).should_be_false();
+  },
+  'Objects should not equal objects which have identical values but non-identical keys': function(){
+    value_of( amok.Util.equal({x:"x", y:"y", w:"z"},{x:"x", y:"y", z:"z"}).result ).should_be_false();
+  },
+  'Objects should not equal objects which have identical members but not the same number of members': function(){
+    value_of( amok.Util.equal({x:"x", y:"y", z:"z"},{w: "w", x:"x", y:"y", z:"z"}).result ).should_be_false();
+  }
+});
+
+describe("Scenario 2: Users checks if item is base type: ",{
+    'before_each': function(){
+
+    },
+    'Given the amok namespace is available': function(){
+        value_of(typeof amok).should_be("object");
+    },
+    'And the amok.Util namespace is available': function(){
+        value_of(typeof amok.Util ).should_be("object");
+    },
+    'When I pass function String to isBaseType Then I will be return string String': function(){
+        value_of(amok.Util.isBaseType(String)).should_be("String");
+    },
+    'When I pass function Number to isBaseType Then I will be returned string Number': function(){
+        value_of(amok.Util.isBaseType(Number)).should_be("Number");
+    },
+    'When I pass function Array to isBaseType Then I will be returned string Array': function(){
+        value_of(amok.Util.isBaseType(Array)).should_be("Array");
+    },
+    'When I pass function Date to isBaseType Then I will be returned string Date': function(){
+        value_of(amok.Util.isBaseType(Date)).should_be("Date");
+    },
+    'When I pass function Boolean to isBaseType Then I will be returned string Boolean': function(){
+        value_of(amok.Util.isBaseType(Boolean)).should_be("Boolean");
+    },
+    'When I pass functiom Object to isBaseType Then I will be returned string Object': function(){
+        value_of(amok.Util.isBaseType(Object)).should_be("Object");
+    },
+    'When I pass function Function to isBaseType Then I will be returned string Function': function(){
+        value_of(amok.Util.isBaseType(Function)).should_be("Function");
+    },
+    'When I pass function RegExp to isBaseType Then I will be returned string RegExp': function(){
+        value_of(amok.Util.isBaseType(RegExp)).should_be("RegExp");
+    }
+});
+
+describe("Scenario 3: Retrieve a list of methods from a class constructor without the need to instantiate",{
+    'before_each': function(){
+        Dummy = function(){
+            this.getFoo = function(){}; //one liner
+            this.getBar  =  function  () {}; //crazy spacing
+
+            this.getAlpha = function(){
+
+            } //No semi colon
+
+            var trickString = "this.test = function(){};";
+
+            this.nestedClass = function(){
+                this.test = function(){
+                    var foo = "bar";
+                }
+            };
+        };
+    },
+    'Given the amok namespace is available': function(){
+        value_of(typeof amok).should_be("object");
+    },
+    'And the amok.Util namespace is available': function(){
+        value_of(typeof amok.Util ).should_be("object");
+    },
+    'When I pass Dummy to getConstructorMethods then I will be returned an array': function(){
+        value_of(amok.Util.getConstructorMethods(Dummy)._type).should_be("Array");
+    },
+    'POSSIBLE BAD TEST, DID NOT PASS ON UNMODIFIED SOURCE: And the length of the array will be 4':function(){
+      //fails on original version. 
+        value_of(amok.Util.getConstructorMethods(Dummy).length).should_be(4);
+    }
+});
+
+describe("Scenario 4: Check whether or not a class contains a method ",{
+    'before_each': function(){
+        DummyClass = function(){
+            this.getFoo = function(){};
+            this.getBar = "bar";
+        };
+
+        DummyClass.prototype.getAlpha = function(){};
+        DummyClass.prototype.getBeta = "beta";
+    },
+    'Given the amok namespace is available': function(){
+        value_of(typeof amok).should_be("object");
+    },
+    'And the amok.Util namespace is available': function(){
+        value_of(typeof amok.Util ).should_be("object");
+    },
+    'When I pass DummyClass and string getFoo to hasMethod then I will be returned boolean true': function(){
+        value_of(amok.Util.hasMethod(DummyClass, "getFoo")).should_be_true();
+    },
+    'When I pass DummyClass and string getBar to hasMethod then I will be returned boolean false': function(){
+        value_of(amok.Util.hasMethod(DummyClass, "getBar")).should_be_false();
+    },
+    'When I pass DummyClass and string getAlpha to hasMethod then I will be returned boolean true': function(){
+        value_of(amok.Util.hasMethod(DummyClass, "getAlpha")).should_be_true();
+    },
+    'When I pass DummyClass and string getBeta to hasMethod then I will be returned boolean false': function(){
+        value_of(amok.Util.hasMethod(DummyClass, "getBeta")).should_be_false();
+    }
+});
+
+describe("Scenario 5: Check whether or not an object contains a method",{
+    'before_each': function(){
+        dummyObjectLiteral = {
+            getFoo: function(){},
+            getBar: "bar"
+        };
+    },
+    'Given the amok namespace is available': function(){
+        value_of(typeof amok).should_be("object");
+    },
+    'And the amok.Util namespace is available': function(){
+        value_of(typeof amok.Util ).should_be("object");
+    },
+    'When I pass dummyObjectLiteral and string getFoo to hasMethod I will be returned boolean true': function(){
+        value_of(amok.Util.hasMethod(dummyObjectLiteral, "getFoo")).should_be_true();
+    },
+    'When I pass dummyObjectLiteral and string getBar to hasMethod I will be returned boolean false': function(){
+        value_of(amok.Util.hasMethod(dummyObjectLiteral, "getBar")).should_be_false();
+    }
+});
+
+// ]]></script>
+</head>
+<body><div style="display:none;"><p>A</p><p>B</p></div></body>
+</html>

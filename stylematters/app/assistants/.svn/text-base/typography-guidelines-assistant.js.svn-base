@@ -1,0 +1,1 @@
+TypographyGuidelinesAssistant = Class.create( ExampleAssistantBase, {});

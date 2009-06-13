@@ -1,0 +1,9 @@
+{
+	"id": "com.mystuff.hello",
+	"version": "1.0",
+	"vendor": "Natto Design",
+	"type": "web",
+	"main": "index.html",
+	"title": "Testy",
+	"icon": "icon.png"
+}

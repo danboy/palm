@@ -1,0 +1,1 @@
+CheckmarkExampleAssistant = Class.create( ExampleAssistantBase, {});

@@ -1,0 +1,57 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example">
+<div class="palm-page-header multi-line">
+	<div class="palm-page-header-wrapper">    
+		<div x-mojo-element="ToggleButton" id="toggle0"></div>
+		<div class="title left" x-mojo-loc=''>
+			Toggle in header
+		</div>
+	</div>
+</div>
+	
+<div class="palm-list">
+	<div class="palm-row first">
+		<div class="palm-row-wrapper">
+			<div x-mojo-element="ToggleButton" id="toggle1"></div>
+			<div class="title" x-mojo-loc=''>
+				Sometimes you want to present a lot of text.
+			</div>
+		</div>
+	</div>
+	<div class="palm-row">
+		<div class="palm-row-wrapper">                                        
+			<div x-mojo-element="ToggleButton" id="toggle2"></div>   
+			<div class="title truncating-text" x-mojo-loc=''>
+				This is truncating text which stays on one line.
+			</div>
+		</div>
+	</div>
+	<div class="palm-row last">
+		<div class="palm-row-wrapper">                     
+			<div x-mojo-element="ToggleButton" class="left" id="toggle3"></div>
+			<div class="title right" x-mojo-loc=''>
+				Toggle 3
+			</div>
+		</div>
+	</div>
+</div>	
+</div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+
+</div>
+
+<!-- list overridable css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>
+	

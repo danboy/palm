@@ -1,0 +1,59 @@
+[
+  {
+    "source": "app\/assistants\/app-assistant.js"
+  },
+  {
+    "source": "app\/assistants\/rss-assistant.js"
+  },
+  {
+    "source": "app\/assistants\/stage-assistant.js"
+  },
+  {
+    "source": "app\/lib\/feed-api.js"
+  },
+  {
+    "scenes": [
+      "sample"
+    ],
+    "source": "app\/assistants\/sample-assistant.js"
+  },
+  {
+    "source": "vendor\/pockets\/lib\/pockets.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/jasmine\/lib\/jasmine.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/app\/assistants\/test-assistant.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/reporter\/test-list-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/reporter\/test-progress-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/reporter\/error-list-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "vendor\/pockets\/amok\/amok\/amok.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/app\/assistants\/rss-assistant-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/app\/assistants\/sample-assistant-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/app\/lib\/feed-api-test.js"
+  }
+]

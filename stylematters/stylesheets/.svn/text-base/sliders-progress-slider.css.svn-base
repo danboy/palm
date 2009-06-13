@@ -1,0 +1,3 @@
+.progress-widget-width {
+	width: 200px;
+}

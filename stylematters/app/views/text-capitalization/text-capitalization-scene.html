@@ -1,0 +1,52 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-group">
+	<div class="palm-group-title un-capitalize">this text is usually capitalized</div>
+	<div class="palm-row single">
+		<div class="palm-row-wrapper">
+			<div class="subtitle">
+				The following framework styles will be capitalized by default:<br />
+				&nbsp;
+			</div>
+			<div class="preview">
+				"capitalize"<br />
+				"palm-page-header .title"<br />
+				"palm-dialog-title"<br />
+				"palm-button"<br />
+				&nbsp;
+			</div>
+			<div class="subtitle">	
+				To escape auto-capialization, override them in your local CSS or add the class "un-capitalize" 
+			</div>
+		</div>	
+	</div>
+</div></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+	...
+	<div class="palm-group-title un-capitalize">this text is usually capitalized</div>
+	...
+</div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+	.capitalize,
+	.palm-page-header.multi-line .title,
+	.palm-group-title,
+	.palm-dialog-title,
+	.palm-button {
+		text-transform: capitalize;
+	}
+	
+	.un-capitalize {
+		text-transform: none !important;
+	}
+</div>

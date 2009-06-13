@@ -1,0 +1,88 @@
+.row.jasmine_spec {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.spec {
+  padding: 8px 8px 8px 35px;
+  background: 10px 8px no-repeat; /*color:#ddd;*/
+}
+
+.row.last .spec {
+  padding-bottom: 10px;
+}
+
+.progress_complete {
+  margin-top: -2px;
+  margin-left: 234px;
+  height: 48px;
+  width: 48px;
+}
+
+/* TODO: cleanup CSS once test-assistant functionality is consistent*/
+
+#progressPill .progress_complete.passed {
+  background: transparent;
+}
+
+#mainProgressPill .progress_complete.passed {
+  background: center url( ../jasmine/images/go.png ) no-repeat;
+}
+
+#progressPill progress_complete.failed {
+  background: transparent;
+}
+
+#mainProgressPill .progress_complete.failed {
+  background: center url( ../jasmine/images/fail.png ) no-repeat;
+}
+
+.row .passed {
+  background-image: url( ../jasmine/images/go-16.png );
+}
+
+.row .failed {
+  background-image: url( ../jasmine/images/fail-16.png );
+  color: red;
+}
+
+ul.failureMessages {
+  padding: 0 0 0 8px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.download-pill .download-filename {
+  margin-top: 5px;
+}
+
+#progressPill .download-pill {
+  -webkit-border-image: url(../images/dialog-button-green-up.png ) 0 12 0 12 stretch stretch;
+  border-width: 0px 12px 0px 12px;
+  width: 274px;
+  margin: 0 auto;
+  height: 32px;
+}
+
+#progressPill .download-pill.fail {
+  -webkit-border-image: url( ../images/dialog-button-red-up.png ) 0 12 0 12 stretch stretch;
+}
+
+#progressPill .file-download-progress {
+  -webkit-border-image: url( ../images/dialog-button-green-down.png ) 0 12 0 12 stretch stretch;
+  border-width: 0px 12px 0px 12px;
+  height: 32px;
+  width: 274px;
+  margin-left: 10px;
+  margin-top: -32px;
+}
+
+#progressPill .file-download-progress.fail {
+  -webkit-border-image: url( ../images/dialog-button-red-down.png ) 0 12 0 12 stretch stretch;
+}
+
+.preload {
+  background-image: url(../images/dialog-button-red-up.png );
+  -webkit-border-image: url(../images/dialog-button-red-down.png ) 0 12 0 12 stretch stretch;
+  display: none;
+}

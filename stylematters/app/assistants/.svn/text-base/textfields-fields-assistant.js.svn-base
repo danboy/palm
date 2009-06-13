@@ -1,0 +1,1 @@
+TextfieldsFieldsAssistant = Class.create( ExampleAssistantBase, {});

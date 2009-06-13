@@ -1,0 +1,1 @@
+ErrorIconsAssistant = Class.create( ExampleAssistantBase, {});

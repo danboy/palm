@@ -1,0 +1,30 @@
+body.my-dark-backdrop {
+	background: url(../images/backdrop-dark.png) center center;
+}
+
+body.my-stones-backdrop {
+	background: url(../images/backdrop-stones.png) center center;
+}
+
+#light-glow {
+	z-index: -100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/light-glow.png) center top no-repeat;
+}
+
+#border-overlay {
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 24px;
+	-webkit-border-image: url(../images/my-rounded-border.png) 24 24 24 24 repeat repeat;
+	-webkit-box-sizing: border-box;
+	-webkit-palm-mouse-target: ignore;
+}

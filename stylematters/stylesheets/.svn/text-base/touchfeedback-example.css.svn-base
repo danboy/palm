@@ -1,0 +1,6 @@
+.selected.my-touch {
+	-webkit-border-image: url(../images/my-selection-gradient-single.png) 24 20 24 20 !important;
+}
+.selected img {
+	opacity: 0;
+}

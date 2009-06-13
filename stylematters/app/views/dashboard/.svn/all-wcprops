@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dashboard
+END
+dashboard-custom-message.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dashboard/dashboard-custom-message.html
+END
+dashboard-scene.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dashboard/dashboard-scene.html
+END
+dashboard-message.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dashboard/dashboard-message.html
+END

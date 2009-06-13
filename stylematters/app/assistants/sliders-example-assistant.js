@@ -1,0 +1,1 @@
+SlidersExampleAssistant = Class.create( ExampleAssistantBase, {});

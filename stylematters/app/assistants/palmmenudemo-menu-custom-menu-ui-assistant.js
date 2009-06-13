@@ -1,0 +1,1 @@
+PalmmenudemoMenuCustomMenuUiAssistant = Class.create( ExampleAssistantBase, {});

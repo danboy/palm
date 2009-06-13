@@ -1,0 +1,3 @@
+.command-menu .palm-menu-fade {
+	background : url(../images/my-scene-fade-bottom-dark.png) repeat-x !important;	
+}

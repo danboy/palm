@@ -1,0 +1,48 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-group">
+	<div class="palm-group-title" x-mojo-loc=''>Email Address</div>
+    <div class="palm-list">
+   	    <div class="palm-row single">
+        <div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+        <div class="title">
+		  <div id="wizard-email-address" x-mojo-element="TextField"></div>
+        </div>
+      </div>
+	    </div>
+	</div>
+</div>
+
+<div class="palm-group">
+<div class="palm-group-title" x-mojo-loc=''>Password</div>
+    <div class="palm-list">
+      <div class="palm-row single">
+   	    <div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+        <div class="title">
+		  <div id="wizard-password" x-mojo-element="PasswordField"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>	
+<div x-mojo-element="Button" id="create-account-button">
+</div>
+</div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+
+</div>
+
+<!-- list overridable css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>
+	

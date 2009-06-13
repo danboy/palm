@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title>JSSpec results</title>
+<link rel="stylesheet" type="text/css" href="../JSSpec/JSSpec.css"/>
+<script type="text/javascript" src="../JSSpec/diff_match_patch.js"></script>
+<script type="text/javascript" src="../JSSpec/JSSpec.js"></script>
+<script type="text/javascript" src="../amok.js"></script>
+<script type="text/javascript">// <![CDATA[
+
+/**
+ * As an amok developer
+ * I want to have a Method class
+ * So that I can represent the methods within the domain model
+ * And encapsulate their functionality
+ */
+
+describe('Scenario 1: User adds values to Method via the getters and setters', {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return ["b", 2, {}];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return null;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'And I have an instance of amok.Method': function() {
+    value_of(typeof myMethod).should_be("object");
+  },
+  'When I pass an object to setExpectation Then getExpectation will return object': function() {
+    myMethod.setExpectation(expectationStub);
+    value_of(typeof myMethod.getExpectation()).should_be("object");
+  },
+  'When I call getName I will be returned string test': function() {
+    value_of(myMethod.getName()).should_be("test");
+  }
+});
+
+describe('Scenario 2: callback method responds to the argument settings contained within the expectation object', {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return ["b", 2, {}];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return null;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'And I have an instance of amok.Method with the expectation set': function() {
+    value_of(typeof myMethod.getExpectation()).should_be("object");
+  },
+  'And mock.getArguments return array ["b", 2, {}]': function() {
+    value_of(expectationStub.getArguments()).should_be(["b", 2, {}]);
+  },
+  'When I pass "b", 2, {} to Method.callback Then no exception will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 2, {}])
+    }).should_not_throw();
+  },
+  'When I pass "b", 2, [] to Method.callback Then an exception will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 2, []])
+    }).should_throw();
+  },
+  'When I pass "b", 1, {} to Method.callback Then an exception will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 1, {}])
+    }).should_throw();
+  },
+  'When I pass "c", 1, {} to Method.callback Then an exception will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["c", 2, {}])
+    }).should_throw();
+  },
+  'When I pass "c", 1, {foo:"bar"} to Method.callback Then an exception will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 2, {foo:"bar"}])
+    }).should_throw();
+  }
+});
+
+describe("Scenario 3: callback method responds to the type of argument set in the exception object", {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return [String, Number, Object];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return null;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'And I have an instance of amok.Method with the expectation set':function() {
+    value_of(typeof myMethod.getExpectation()).should_be("object");
+  },
+  'And mock.getArguments return array [String, Number, Object]': function() {
+    value_of(expectationStub.getArguments()).should_be([String, Number, Object]);
+  },
+  'When passed arguments of the correct type no error will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 2, {}])
+    }).should_not_throw();
+  },
+  'When passed an array where an object is expected an error will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", 2, []])
+    }).should_throw();
+  },
+  'When passed a string where a number was expected an error will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", "c", {}])
+    }).should_throw();
+  },
+  'When passed a number where a string was expected an error will be thrown': function() {
+    value_of(function() {
+      myMethod.callback([2, 2, {}])
+    }).should_throw();
+  },
+  'When passed an object where a number was expected an error will be thrown': function() {
+    value_of(function() {
+      myMethod.callback(["b", {}, {}])
+    }).should_throw();
+  }
+});
+
+describe("Scenario 4: Callback returns the values defined in the return values of the exception object", {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return [];
+      },
+      getReturnValues: function() {
+        return [1,2,3];
+      },
+      getCallLimit: function() {
+        return null;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'And I have an instance of amok.Method with the expectation set':function() {
+    value_of(typeof myMethod.getExpectation()).should_be("object");
+  },
+  'And method.getRetuernValues returns array [1,2,3]': function() {
+    value_of(expectationStub.getReturnValues()[0]).should_be(1);
+    value_of(expectationStub.getReturnValues()[1]).should_be(2);
+    value_of(expectationStub.getReturnValues()[2]).should_be(3);
+  },
+  'When I make the call to callback() for the first time I will be returned Number 1': function() {
+    value_of(myMethod.callback()).should_be(1);
+  },
+  'When I make the call to callback() for the second time I will be returned Number 2': function() {
+    myMethod.callback();
+    value_of(myMethod.callback()).should_be(2);
+  },
+  'When I make the call to callback() for the third time I will be returned Number 3': function() {
+    myMethod.callback();
+    myMethod.callback();
+    value_of(myMethod.callback()).should_be(3);
+  },
+  'When I make the call to callback() for the forth time (undefined) I will be returned Number 3 (the last value in the array)': function() {
+    myMethod.callback();
+    myMethod.callback();
+    myMethod.callback();
+    value_of(myMethod.callback()).should_be(3);
+  }
+});
+
+describe("Scenario 5: callback responds to the call limit within the exception object", {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return [];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return 3;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'And the the expectation.getCallLimit returns 3':function() {
+    value_of(expectationStub.getCallLimit()).should_be(3);
+  },
+  'When I call to callback three times no exception will be rasied': function() {
+    value_of(function() {
+      myMethod.callback();
+    }).should_not_throw();
+    value_of(function() {
+      myMethod.callback();
+    }).should_not_throw();
+    value_of(function() {
+      myMethod.callback();
+    }).should_not_throw();
+  }
+});
+
+describe("Scenario 6: mocked method (callback ;-p) calls its own callback", {
+  'before_each': function() {
+    one = null;
+    two = null;
+
+    /* REPLACE THIS WITH A MOCK :-) */
+    expectationStub = {
+      getArguments: function() {
+        return [];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return null;
+      },
+      getCallback: function() {
+        return {
+          callback: function(msg) {
+            one = msg;
+          },
+          message: "one"
+        };
+      }
+    };
+
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'When I call to callback three times no exception will be rasied': function() {
+    myMethod.callback();
+    value_of(one).should_be("one");
+  }
+});
+
+describe("Scenario 7: method.getCallCount returns the number of times the callback was called", {
+  'before_each': function() {
+    /* REPLACE THIS WITH A MOCK */
+    expectationStub = {
+      getArguments: function() {
+        return [];
+      },
+      getReturnValues: function() {
+        return [];
+      },
+      getCallLimit: function() {
+        return 3;
+      },
+      getCallback: function() {
+        return null;
+      }
+    };
+    myMethod = new amok.Method("test", expectationStub);
+  },
+  'Given that the amok namespace is available': function() {
+    value_of(typeof amok).should_be("object");
+  },
+  'When I call to callback two times getCallCount should return 2': function() {
+    myMethod.callback();
+    myMethod.callback();
+    value_of(myMethod.getCallCount()).should_be(2);
+  }
+});
+
+// ]]></script>
+</head>
+<body>
+<div style="display:none;"><p>A</p>
+
+  <p>B</p></div>
+</body>
+</html>

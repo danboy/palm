@@ -1,0 +1,1 @@
+ErrorIconographyAssistant = Class.create( ExampleAssistantBase, {});

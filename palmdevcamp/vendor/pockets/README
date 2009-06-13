@@ -1,0 +1,18 @@
+create empty working copy 
+	svn mkdir $REPO/palm/spikes/[pockets_sandbox] -m "mkdir"
+	svn co $REPO/palm/spikes/[pockets_sandbox] 
+	cd pockets_sandbox 
+
+set up the pockets external
+	mkdir vendor
+	svn add vendor
+	svn propset svn:externals "pockets https://svn.pivotallabs.com/subversion/palm/shared/pockets/trunk/"  vendor
+	svn commit vendor -m "set pockets external"
+	svn up
+
+generate a palm app
+	palm-gen-app [PocketsSandbox] --id com.pivotallabs.luna.[pockets_sandbox]
+
+pockets-init
+	./vendor/pockets/pockets-init 
+

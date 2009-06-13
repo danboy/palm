@@ -1,0 +1,1 @@
+StatusIndicatorsExampleAssistant = Class.create( ExampleAssistantBase, {});

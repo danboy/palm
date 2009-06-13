@@ -1,0 +1,24 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+	
+</div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+	
+	body {
+		background: url(../images/backdrop-stones.png) center center;
+	}
+	
+</div>

@@ -1,0 +1,20 @@
+<div id="palm-dialog-content" class="palm-dialog-content">
+	<div class="palm-dialog-title" x-mojo-loc=''>
+		Choose a date...
+	</div>
+	<div class="palm-dialog-separator"></div>
+	<div id='timepicker' x-mojo-element="DatePicker"></div>
+</div>
+
+<div class="palm-dialog-buttons">
+	<div id="thanksButton" class="palm-button" x-mojo-tap-highlight="immediate">
+        <div class="palm-button-wrapper" x-mojo-loc="">
+			Jump
+		</div>
+    </div>
+    <div id="cancel_button" class="palm-button" x-mojo-tap-highlight="immediate">
+        <div class="palm-button-wrapper" x-mojo-loc="">
+			Cancel
+		</div>
+    </div>
+</div>

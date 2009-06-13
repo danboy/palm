@@ -1,0 +1,99 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div class="palm-group">
+	<div class="palm-group-title">Ingredients</div>
+	<div class="palm-list">
+		<div class="palm-row first">
+			<div class="palm-row-wrapper">
+				<div class="label">2 cups</div>
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox"></div>
+				<div class="title">Sifted flour</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div class="label">3 cups</div>
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox"></div>
+				<div class="title">Lukewarm milk</div>
+			</div>
+		</div>
+		<div class="palm-row last">
+			<div class="palm-row-wrapper">
+				<div class="label">1 stick</div>
+				<div x-mojo-element="CheckBox" class="left" id="sample-checkbox"></div>
+				<div class="title">Melted butter</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-group">
+	<div class="palm-group-title">
+		Username
+	</div>
+	<div class="palm-list">  
+		<div class='palm-row single'>
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="title">
+					<div id="user-field" x-mojo-element="TextField"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-group">  
+	<div class="palm-group-title">
+		Password
+	</div>
+	<div class="palm-list">
+		<div class='palm-row single'>
+			<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+				<div class="title">
+					<div id="pass-field" x-mojo-element="PasswordField"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="palm-group">
+	<div class="palm-group-title">To Do List</div>
+	<div class="palm-list">
+		<div class="palm-row first">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="right" id="sample-checkbox"></div>
+				<div class="title">Mail scrapbook</div>
+			</div>
+		</div>
+		<div class="palm-row">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="right" id="sample-checkbox"></div>
+				<div class="title">Research cruise</div>
+			</div>
+		</div>
+		<div class="palm-row last">
+			<div class="palm-row-wrapper">
+				<div x-mojo-element="CheckBox" class="right" id="sample-checkbox"></div>
+				<div class="title">Write novel</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html">
+	
+</div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+
+</div>

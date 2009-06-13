@@ -1,0 +1,62 @@
+[
+  {
+    "source": "lib\/pockets.js"
+  },
+  {
+    "source": "app\/assistants\/stage-assistant.js"
+  },
+  {
+    "source": "app\/assistants\/test-assistant.js"
+  },
+  {
+    "source": "lib\/pockets.js"
+  },
+  {
+    "scenes": "test",
+    "source": "jasmine\/lib\/jasmine.js"
+  },
+  {
+    "scenes": "test",
+    "source": "app\/assistants\/test-assistant.js"
+  },
+  {
+    "scenes": "test",
+    "source": "reporter\/test-list-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "reporter\/test-progress-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "reporter\/error-list-widget.js"
+  },
+  {
+    "scenes": "test",
+    "source": "amok\/amok\/amok.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/test_helpers\/mom.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/app\/assistants\/test-assistant-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/lib\/pockets-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/reporter\/error-list-widget-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/reporter\/test-list-widget-test.js"
+  },
+  {
+    "scenes": "test",
+    "source": "test\/reporter\/test-progress-widget-test.js"
+  }
+]

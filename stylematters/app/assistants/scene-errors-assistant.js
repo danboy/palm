@@ -1,0 +1,1 @@
+SceneErrorsAssistant = Class.create( ExampleAssistantBase, {});

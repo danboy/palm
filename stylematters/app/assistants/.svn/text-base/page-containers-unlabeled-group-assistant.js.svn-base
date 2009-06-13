@@ -1,0 +1,1 @@
+PageContainersUnlabeledGroupAssistant = Class.create( ExampleAssistantBase, {});

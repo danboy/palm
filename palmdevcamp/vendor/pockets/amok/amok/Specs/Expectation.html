@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>JSSpec results</title>
+<link rel="stylesheet" type="text/css" href="../JSSpec/JSSpec.css" />
+<script type="text/javascript" src="../JSSpec/diff_match_patch.js"></script>
+<script type="text/javascript" src="../JSSpec/JSSpec.js"></script>
+<script type="text/javascript" src="../amok.js"></script>
+<script type="text/javascript">// <![CDATA[
+
+/**
+ * As an amok developer
+ * I want to have a expectation class
+ * So that I can add expectations I can generate expectations related to mock methods
+ */
+
+describe('Scenario 1: User adds values to Expectation via the getters and setters', {
+	'before_each': function(){
+        myExpectation = new amok.Expectation("test");
+	},
+	'Given that the amok namespace is available': function() {
+		value_of( typeof amok ).should_be("object");
+	},
+	'And I have an instance of amok.Method': function() {
+		value_of(typeof myExpectation).should_be("object");
+	},
+	'And getCallLimit returns null': function() {
+		value_of( myExpectation.getCallLimit() ).should_be_null();
+	},
+	'And getReturnValues returns an empty array': function() {
+		value_of( myExpectation.getReturnValues() ).should_be( [] );
+	},
+	'And getArguments returns an empty array': function() {
+		value_of( myExpectation.getArguments() ).should_be( [] );
+	},
+	'When I pass number 5 to setCallLimit Then getCallLimit will return 5': function() {
+		myExpectation.setCallLimit(5);
+		value_of( myExpectation.getCallLimit() ).should_be( 5 );
+	},
+	'When I pass array 1,2,3 to setReturnValues Then getReturnValues will return array [1,2,3]': function() {
+		myExpectation.setReturnValues([1,2,3]);
+        value_of( myExpectation.getReturnValues() ).should_be( [1,2,3] );
+	},
+	'When I pass array ["a", "b", "c"] to setArguments Then getArguments will return ["a", "b", "c"]': function() {
+		myExpectation.setArguments(["a", "b", "c"]);
+		value_of( myExpectation.getArguments() ).should_be( ["a", "b", "c"] );
+	},
+	'POSSIBLE BAD TEST, DID NOT PASS ON UNMODIFIED SOURCE: When I pass array a callback function and arguements to setCallback Then getCallback will return an object containing the callback and the arguments array': function() {
+		var callback = function(){
+			return "test";
+		};
+		var arguments = ["one", "two", "three"];
+
+    //spec fails on original source...
+		console.log(myExpectation);
+		myExpectation.setCallback([callback, arguments]);
+		var callbackObject = myExpectation.getCallback() ;
+		value_of( callbackObject["callback"] ).should_be( callback );
+		value_of( callbackObject["arguments"] ).should_be( arguments );
+	}
+});
+
+
+// ]]></script>
+</head>
+<body><div style="display:none;"><p>A</p><p>B</p></div></body>
+</html>

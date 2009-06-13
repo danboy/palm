@@ -1,0 +1,3 @@
+DrawersExampleAssistant = Class.create( ExampleAssistantBase, {
+
+});

@@ -1,0 +1,12 @@
+body {
+	background: url(../images/my-list-backdrop.png) center center !important;
+}
+.palm-row {
+  background: url(../images/my-separator-blue.png) bottom center repeat-x;
+}
+.title {
+	color: #333 !important;
+}
+.palm-row.palm-delete-element {
+	-webkit-border-image: url(../images/my-row-deleting.png) 24 20 24 20 repeat repeat;
+}

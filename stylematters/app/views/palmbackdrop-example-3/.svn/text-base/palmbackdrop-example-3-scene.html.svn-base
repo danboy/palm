@@ -1,0 +1,53 @@
+<!-- This is div is required -->
+<div id="complete_example"></div>
+
+<!-- place your example between these tags, with correct indentation and whitespace (by default, this serves as user-facing HTML example). -->
+<div id="e_example"><div id="light-glow"></div>
+<div id="border-overlay"></div>
+<div style="width: 100%; text-align: center;">
+	<div class="info-text">
+		<img src="images/my-rounded-border.png" /><br />
+		(image used for border)
+	</div>
+</div></div>
+
+<!-- place additional context, explanation or info between these tags -->
+<div id="e_about">
+	
+</div>
+
+<!-- leave this blank for default html (above), or place code here to override -->
+<div id="e_html"><div id="light-glow"></div>
+<div id="border-overlay"></div></div>
+
+<!-- list developer-facing css pertinent to this example, between these tags -->
+<div id="e_css">
+
+	body.my-dark-backdrop {
+		background: url(../images/backdrop-dark.png) center center;
+	}
+	
+	#light-glow {
+		z-index: -100;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../images/light-glow.png) center top no-repeat;
+	}
+	
+	#border-overlay {
+		z-index: 100000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-width: 24px;
+		-webkit-border-image: url(../images/my-rounded-border.png) 24 24 24 24 repeat repeat;
+		-webkit-box-sizing: border-box;
+		-webkit-palm-mouse-target: ignore;
+	}
+	
+</div>

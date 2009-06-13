@@ -1,0 +1,3 @@
+TextExampleAssistant = Class.create( ExampleAssistantBase, {
+
+});

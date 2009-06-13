@@ -1,0 +1,1 @@
+DownloadButtonExampleAssistant = Class.create( ExampleAssistantBase, {});

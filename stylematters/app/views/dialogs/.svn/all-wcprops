@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dialogs
+END
+username-password-dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dialogs/username-password-dialog.html
+END
+all-buttons-dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dialogs/all-buttons-dialog.html
+END
+datepicker-dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sdk/!svn/ver/141593/branches/release/stylematters/app/views/dialogs/datepicker-dialog.html
+END

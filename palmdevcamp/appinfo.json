@@ -1,0 +1,10 @@
+{
+	"title": "palmdevcamp",
+	"type": "web",
+	"main": "index.html",
+	"id": "com.pivotallabs.palmdevcamp",
+	"version": "1.0",
+	"removable": "true",
+    "icon": "icon.png",
+	"vendor": "com.pivotallabs"
+}

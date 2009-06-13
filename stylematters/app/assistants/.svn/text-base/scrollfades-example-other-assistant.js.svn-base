@@ -1,0 +1,3 @@
+ScrollfadesExampleOtherAssistant = Class.create( ExampleAssistantBase, {
+
+});

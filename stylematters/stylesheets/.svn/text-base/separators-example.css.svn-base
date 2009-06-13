@@ -1,0 +1,3 @@
+.palm-row.my-separator {
+  background: url(../images/my-separator.png) bottom center repeat-x;
+}

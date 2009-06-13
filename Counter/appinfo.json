@@ -1,0 +1,9 @@
+{
+	"id": "com.natto.counter",
+	"version": "1.0",
+	"vendor": "Natto Design",
+	"type": "web",
+	"main": "index.html",
+	"title": "Counter",
+	"icon": "icon.png"
+}

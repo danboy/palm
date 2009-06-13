@@ -1,0 +1,1 @@
+TypographyFontFamiliesAssistant = Class.create( ExampleAssistantBase, {});

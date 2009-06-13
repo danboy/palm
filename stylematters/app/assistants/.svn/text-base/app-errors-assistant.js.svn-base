@@ -1,0 +1,1 @@
+AppErrorsAssistant = Class.create( ExampleAssistantBase, {});
